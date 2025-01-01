@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial scale=1.0">
+    <meta name="author" content="Khuljohn_dev">
+    <meta name="title" content="technical documetation page">
+    <meta neme="description" content="technical page docuent">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Techical page</title>
+  </head>
+  <body id="wrapper">
+     <!--navigation-->
+      <nav id="navbar">
+        <header>
+        <h1>CSS Documentation</h1>
+        <!--nav links-->
+        </header>
+     <ul>
+       <li class="li"><a class="nav-link" href="#introduction">Introduction</a></li>
+          <li><a class="nav-link" href="#css_syntax_and_selection">CSS syntax and selection</a></li>
+          <li><a class="nav-link" href="#css_inserting">CSS Inserting</a></li>
+          <li><a class="nav-link" href="#css_color">CSS Color</a></li>
+          <li><a class="nav-link" href="#css_background">CSS Background</a></li>
+          <li><a class="nav-link" href="#css_border">CSS Border</a></li>
+          <li><a class="nav-link" href="#css_margin">CSS margin<a/></li>
+          <li><a class="nav-link" href="#css_padding">CSS Padding</a></li>
+          <li><a class="nav-link" href="#css_width_and_height">CSS width and height</a></li>
+          <li><a class="nav-link" href="#css_box_models">CSS Box models</a></li>
+          <li><a class="nav-link" href="#css_icons">CSS Icons<a/></li>
+            </ul>
+          </nav>
+    <!--main document-->
+        <main id="main-doc">
+          <!--introduction section-->
+      <section class="main-section" id="introduction">
+        <header>
+        <!--section1 header-->
+        <h1>Introduction</h1>
+        </header>
+        <!--section1 article-->
+        <article>
+        <h2>What is CSS</h2>
+        <lu>
+          <li>CSS stand for Cascadind Stylesheet.</li>
+          <li>CSS is a stylesheey language used to describe the presentation of an HTML Document</li>
+          <li>CSS describe how elements should be rendered on screen</li>
+      
+     <h2>CSS prerequisites</h2>
+          <p>Basic knowledge of working with files or file management,expecially basic knowledge of HTML in ordr to start learning CSS you must have basic understanding first.</p>
+          <h2>Why uses CSS</h2>
+          <p>CSS defines style of your web pages including design,layout and variations in diasplay across devices and screen size.CSS can save you a lot of work,an external stylesheet saved as <b>.css</b> can be used to style multiples pagesall ta once.</p>
+          <h2>CSS Example</h2>
+          <p>here is one of CSS example</p>
+          <code>
+            body{<br>
+          background-color: black;<br>
+            }<br>
+            p{<br>
+            font-size: 20px;<br>
+            color-gold;<br>
+            }
+          </code>
+          </article>
+      </section>
+        <!--syntax and selection section-->
+      <section class="main-section" id="css_syntax_and_selection">
+        <!--section2 header-->
+        <header>
+        <h1>CSS syntax and selection</h1>
+        </header>
+        <!--section2 article-->
+        <article>
+        <h2>CSS syntax</h2>
+        <p>A <b>CSS releset/rules</b> is composed of a <b>selectors</b> and a <b>declaration block</b><br>
+          <code>
+            div{<br>
+         background-color: black;<br>
+         width: 200px;<br>
+         height: 200px;<br>
+            }</code>
+          <p>The declaration block are grouped in block.Each declaration block coontains CSS declaration which are wrapped by an opening cury brace and a closing curly brace.CSS declaration has to be separated by a semicolon;otherwise the code won't work.It allowed not to put a semicolon in the last declaration.</p>
+        <h2>CSS Selectors</h2>
+        <p>The following are simple CSS selectors and there are more CSS selectors lessons as you go through our lesson</p>
+        <h3>Element Selectors</h3>
+        <p>It is the simplest way to target all of given elements</p>
+        <h3>Example</h3>
+        <code>
+          h1{<br>
+          font-weight: bold;<br>
+          }
+        </code>
+        <h3>Class Selector</h3>
+        <p>Multiple elements can have the same class values.CSS class selectors are very useful when targeting different element.The class selector consists of a dot(.) followed by class name.
+        </p>
+        <h3>Example</h3>
+        <code>
+          <br>
+          .underlined{<br>
+         font-decoration: underlined;<br>           }<br>
+          .emboldened{<br>
+             font-decoration: bold<br>
+          
+          }
+        </code>
+          <h3>ID Selector</h3>
+          <p>The ID selector is very useful when targeting a single element.An ID selector consists of a dash(#) followed by  an ID name.An ID name is defined using the id attribute</p>
+          <h3>EXmple</h3>
+          <code>
+            #red{<br>
+            background-color: red;<br>
+            width: 200px;<br>
+            height: 200px;<br>
+            }
+          </code>
+        <h3>Grouping Selectiors</h3>
+        <p>Sometimes multiple CSS ruleset may have similar declarations.Instant of repeating the same declaration we can simply have a group of selectors in a CSS ruleset.A grouping selector consists of selectors separated by commas.</p>
+        <h3>Example</h3>
+        <code>
+          h1,p{<br>
+    font-family: times new roman;<br>
+          color: green;<br>
+          
+          }</code>
+        </article>
+      </section>
+        <!--css inserting section-->
+    <section class="main-section" id="css_inserting">
+      <!--section3 header-->
+      <header>
+      <h1>CSS inserting</h1>
+      </header>
+      <!--section3 article-->
+      <article>
+      <p>Tthere are three simple ways to insert CSS into an HTML document.</P>
+        <lu>
+          <li>Internal stylesheet</li>
+          <li>External stylesheet</li>
+          <li>Inline stylesheet</li>
+          </ul>
+        <h2>Internal stylesheet</h2>
+        <p>An internal stylesheet is useful when a single HTML document has its unique style.With this,CSS rulesert  should be included in the <b>style</b> element.FOR following best practice we can use the <b>type</b> attribute to define the MME type of the <b>style</b> tag.</p>
+        <h2>External stylesheet</h2>
+        <p>An external stylesheet can be very useful when multiple HTML pages have the same style.This can be achived by having an external stylesheet file.An external stylesheet file must be saved with <b>.css</b> extension.Then we need to use the <b>link</b> element to include the file in our HTML page.The should be no <b>style</b> element inside CSS file</p>
+          
+        <h2>Inline stylesheet</h2>
+        <p>Inline styling is useful for styling a single element.It is done by using the <b>style</b> attribute.ITS value cantain CSS declaration</p>
+      </article>
+          
+    </section>
+          <!--color section-->
+      <section class="main-section" id="css_color">
+        <!--section4 header-->
+        <header>
+        <h1>CSS Color</h1>
+        </header>
+        <!--section4 article-->
+        <article>
+        <p>CSS colors are commonly specified using the following:</p>
+        <ul>
+          <li>Color name</li>
+     <li>Hexadecimal color value</li>
+          <li>RGB color value</li>
+        </ul>
+        <h4>Color name</h4>
+        <p>It defines any color by its own name</p>
+        <h4>Example</h4>
+        <code>
+          #color-name{<br>
+              color: maroon;<br>
+          }
+        </code>
+        <h3>Hexadecimal color value</h3>
+        <p>
+          Also known as hex color value.It defines any valid color by a hash followed by thw latters and numbers.<p>
+        <h3>Example</h3>
+        <code>
+          #hex-color{<br>
+           color: #808000;<br>
+          }
+        </code>
+        <h3>RGB color value</h3>
+        <p>RGB stand for Red,Green,Blue.It defines any vaid color using the <b>rgb()</b> CSS function.The numer value should only be from 0 to 255.The number represent the intensity of the red,green and blue colors in that particular order<p>
+        <h3>Example</h3>
+        <code>
+          #rgb-color{<br>
+            color: rgb(0,0,255);<br>
+          }</code>
+        </article>
+      </section>
+          <!--background section-->
+      <section class="main-section" id="css_background">
+        <!--section5 header-->
+        <header>
+          <h1>CSS Background</h1></header>
+        <!--section5 article-->
+        <article>
+        <p>Elements background can be filled with color,image,clipped, resized and otherwise be mordified<p>
+        <h2>CSS background propertise</h2>
+        <ul>
+          <li>background-color</li>
+          <li>background-image</li>
+          <li>background-repeat</li>
+          <li>background-attachment</li>
+          <li>background-position</li>
+        </ul>
+        <h3>Background-color</h3>
+        <p>We can specify a background color fpr an element using the <b>background-color</b> property.The value can be any vaild CSS color.</p>
+        <h3>Example</h3>
+        <code>
+          h1{<br>
+          background-color: yellow;<br>
+          }<br>
+          p{<br>
+          bacground-color: #808000;<br>
+          }<br>
+          div{<br>
+          background-color: rgb(0,0,255);<br>
+          height: 200px;<br>
+          width: 200px;<br>
+          }
+        </code>
+        <h3>Background image</h3>
+        <p>The background-image property set one or more images as abackground of an element.The format of its value should be <b>url("image.jpg")</b>.
+        <h3>Example</h3>
+        <code>
+          body{<br>
+          background-image: url("image.jpg");<br>
+          }
+        </code>
+        <h3>Background image repeat</h3>
+        <p>CSS automatically reset background image horizontally and vertically.But we can manualy repeat background image horizintally and vertically by using the <b>background-repeat</b> property.The <b>no-repeat</b> value of the property background repeat stops a background image from repeating</b>
+          <h3>Examples</h3>
+          <p>Horizontal repeating</p>
+          <code>
+            body{<br>
+          background-image: url("image.jpg");<br>
+         background-repeat: repeat-x;<br>
+            }
+          </code>
+          <p>Vertical repeating</p>
+          <code>
+            body{<br>
+      background-image: url("image.jpg");<br>
+      background-repeat: repeat-y;<br>
+            }</code>
+          <p>No repeat</p>
+          <code>
+            body{<br>
+      background-image: url("image.jpg");<br>
+     background-repeat: no-repeat;<br>
+            }</code>
+          <h3>Background-attachment</h3>
+          <p>The <b>background attachment</b> property sets whwther a background image fixed within the viewport,or scrolls with its containig block</p>
+          <h3>Valid values</h3>
+          <ul>
+            <li><b>scroll</b>: background is fixed relative to the element itself and does not scroll with its content</li>
+            <li><b>fixed</b>: background is fixed relative to the element contents.If the element has a a scrolling mechanism, the background does not move with element.</li>
+            <li><b>local</b>: background is fixed relative to the element content.if the element has a scrolling mechanism,the background scrolls with the element content.</li>
+            <li><b>scroll,local</b></li>
+            <li><b>local,scroll</b></li>
+          </ul>
+          <h3>Background-image position</h3>
+          <p>We can set the initial position of a background image by using the <b>background-position</b> propety</p>
+          <h3>Valid value</h3>
+          <lu>
+            <li>Top</li>
+            <li>Bottom</li>
+            <li>Right</li>
+            <li>Left</li>
+            <li>Center</li>
+            <li>Percentage</li>
+            <li>Inherit</li>
+            <li>Initial</li>
+            <li>Unset</li>
+            </ul>
+          <code>NB: combination of (top and bottom) and (left and right) can't combined.</code>
+        </article>
+      </section>
+      <!--border section-->
+      <section class="main-section" id="css_border">
+        <!--section6 header-->
+        <header>
+        <h1>CSS Border</h1>
+        </header>
+        <!--section6 article-->
+        <article>
+        <p>In CSS we can decorate borders with lines by making it square or rounded.The <b>border-style</b> property set the line style for all four sides of an element border.</p>
+        <h2>Border-style values</h2>
+        <ul>
+          <li>None</li>
+          <li>Hidden</li>
+          <li>Dotted</li>
+          <li>Dashed</li>
+          <li>Solid</li>
+          <li>Double</li>
+          <li>Groove</li>
+          <li>Ridge</li>
+          <li>Inset</li>
+          <li>outset</li>
+        </ul>
+        <h2>Border-width</h2>
+        <p>We can specify the width of an element border using the <b>border-width</b> property</p>
+        <h3>valid value</h3>
+        <ul>
+          <li>thin</li>
+          <li>medium</li>
+          <li>thick</li>
+          <li>length</li>
+        </ul>
+        <h2>Border-color</h2>
+        <p>The <b>border-color</b> property defines the color of a border</p>
+        <h3>Exsmple</h3>
+        <code>
+          div{<br>
+          border-style: solid;<br>
+          border-width: 5px;<br>
+          border-color: red;<br>
+          width: 200px;<br>
+          height: 200px;<br>
+          backround-color: blue;<br>
+          }</code>
+        </article>
+     </section>
+    <!--margin section-->
+      <section class="main-section" id="css_margin">
+        <!--section7 header-->
+        <header>
+        <h1>CSS Margin</h1>
+        </header>
+        <!--section7 article-->
+        <article>
+        <p>CSS margin create space around or outside element.The following properties set the length of a margin on each side</p>
+        <ul>
+          <li><b>margin-top</b>:sets the margin area on top of an elelment</li>
+          <li><b>margin-right</b>:sets the margin area on the right side of an element</li>
+          <li><b>margin-bottom</b>:sets themargin area on tne top of an element</li>
+          <li><b>margin-left</b>:sets the margin area on the left side of an element</li>
+        </ul>
+        <h2>valid values</h2>
+        <ul>
+          <li>length</li>
+          <li>percentage</li>
+          <li>auto</li>
+        </ul>
+        <br>
+        <p>the <b>margin</b> property is shorthand for all margin property and it can have one,two,three or four values</p>
+        <ul>
+          <li>When one value is specified, it applies the same gargin to all four sides of an elelment</li>
+          <li>When two values are specified, the first value applies to the top and bottom,the secornd value applies to left and right</li>
+          <li>When three values are specified,the first applied to the top,the second value applies to the left and right,the third value applies to the bottom</li>
+          <li>When four values are specified,first value applies to the top,second value applies to the right,the third value applies to the bottom and the forth value applies to the left</li?
+        </ul>
+          </article>  
+      </section>
+        <!--padding section-->
+      <section class="main-section" id="css_padding">
+        <!--section8 header-->
+        <header>
+        <h1>CSS Padding</h1>
+        </header>
+        <!--section8 article-->
+        <article>
+        <p>CSS padding create space within an element.It clears an area around the inside of an element</p>
+        <h5>The following property set the length of the padding on each side of the element</h5>
+        <ul>
+          <li><b>padding-top</b>:sets the padding area on the top of an element</li>
+          <li><b>padding-right</b>:sets the padding area on the right side of an elelment</li>
+          <li><b>padding-left</b>:sets the padding area on the left sde of an element</li>
+          <li><b>padding-bottom</b>:sets the padding area on the bottom of an element</li>
+        </ul>
+        <h2>CSS padding shorthand</h2>
+        <p>The padding CSS property can have one,two,three,or four values</p>
+        <ul>
+          <li>Whe one value is specified, it applies to all four sides of an element.</li>
+          <li>When two value specified,first value applies to the top and bottom sides of an element and second value applies to the left and left sides of an element</li>
+          <li>when three value specified,first value applies to the top of an element,second value applies to the left and right of an element and third value applies to the bottom side of an element</li>
+          <li>when four values specified,first value applies to the top side,second value applies to the right side,third value applies to the bottom side and four value applies to the left side of an element</li>
+        </ul>
+        </article>
+      </section>
+      <!--width and height section-->
+      <section class="main-section" id="css_width_and_height">
+        <!--section9 header-->
+        <header>
+        <h1>CSS width and height</h1>
+        </header>
+        <!--section9 article-->
+        <article>
+        <p>The <b>width</b> and <b>height</b> CSS properties set the width/height of an element.Bt default,those propertiesdefine the width/height of a content as a area or box</p>
+        <h2>Valid values</h2>
+        <ul>
+          <li>length</li>
+          <li>percentage</li>
+          <li>auto</li>
+          <li>max-content</li>
+          <li>mini-content</li>
+          <li>available</li>
+          <li>fit-content</li>
+        </ul>
+        <h2>example</h2>
+        <p>Height CSS property</p>
+        <code>
+          #element1{<br>
+                  height: 200px;<br>
+          }<br>
+          #element2{<br>
+             height; 5em;<br>
+          }<br>
+          #element3{<br>
+            height: 75%;<br>
+          }<br>
+          #element{<br>
+            height: auto;<br>
+          }</code><br>
+        <p>Width CSS property</p>
+          <code>
+        #element1{<br>
+          width: 200px;<br>
+        }<br>
+        #element2{<br>
+           width: 5em;<br>
+        }<br>
+        #element3{<br>
+            width: 75%;<br>
+        }<br>
+        #element4{<br>
+            width: auto;<br>
+        }</code><br>
+        </article>
+      </section>
+  <!--box models section-->
+      <section class="main-section" id="css_box_models">
+        <!--section10 header-->
+        <header>
+          <h1>CSS box models</h1></header>
+        <!--section10 article-->
+          <article>
+        <p>CSS box is the foundation of design and layout of the web.In CSS box model,each element representd as a box with the following properties</p>
+        <ul>
+          <li><b>Countent</b>: it is the area where the content of the box is displayed.</li>
+          <li><b>padding</b>: The space or area between and inner edge of the border,its is transparent</li>
+          <li><b>Border</b>: the area between margin and the padding,its width,style and color can be changed</li>
+          <li><b>margin</b>: the area outside the border and its transparent</li>
+        </ul>
+        </article>
+        </section>
+        <!--icons section-->
+ <section class="main-section" id="css_icons">
+   <!--section11 header-->
+   <header>
+   <h1>CSS Icons</h1>
+   </header>
+   <!--section11 article-->
+   <article>
+   <p>we can use icons to our HTML pagr by using icons libraries such as font awesome,bootstrap and material icons by google.To add icons we should use HTML inline element such as span or i</p>
+   <h2>Font awesome icons</h2>
+   <p>To use font awesome icons we need to include library to our HTML page by using the<b>link</b> tag with its <b>href</b> attribute containg <b>url</b> of font awesome library</p>
+   <h2>Bootstrap</h2>
+   <p>To use Bootstap icons we need to include its library to our HTML page by using the <b>link</b> tag with its <b>href</b> attribute containing <b>url</b> of tje bootstap library</p>
+   <h2>Material icons</h2>
+   <p>to use material icons we need to include library into our HTML page by using the <b>link</b> tag with its <b>href</b> attribute containing <b>url</b> of material icon libray</p>
+   </article>
+        </section>
+      </main>
+  </body>
+</html>
